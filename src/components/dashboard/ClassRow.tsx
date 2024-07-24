@@ -22,7 +22,7 @@ import { UpcomingClass }  from '@/types';
 interface ClassRowProps {
   classInfo: UpcomingClass;
   index: number;
-  onConfirm: (classId: number) => void;
+  bookconfirm: (classId: number) => void;
 }
 // Function to format date and time into a readable string
 function formatDateTime(date: string, time: string): string {
@@ -65,7 +65,7 @@ function calculateRemainingTime(date: string, time: string): string {
   return `${String(diffHrs).padStart(2, '0')}:${String(diffMins).padStart(2, '0')}:${String(diffSecs).padStart(2, '0')}`;
 }
 
-const ClassRow: React.FC<ClassRowProps> = ({ classInfo, index, onConfirm }) => {
+const ClassRow: React.FC<ClassRowProps> = ({ classInfo, index, bookconfirm }) => {
   const [remainingTime, setRemainingTime] = useState<string>("");
 
   useEffect(() => {
@@ -232,7 +232,7 @@ const ClassRow: React.FC<ClassRowProps> = ({ classInfo, index, onConfirm }) => {
                 </DialogClose>
                 <DialogClose asChild>
                 <button onClick={() => {
-                  onConfirm(classInfo.id);
+                  bookconfirm(classInfo.id);
                   setRemainingTime(calculateRemainingTime(classInfo.date, classInfo.time));
                 }} className="px-4 py-2 bg-blue-500 text-white text-base font-semibold rounded-[10px] hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                   Confirm

@@ -33,26 +33,30 @@ const mockClasses = [
 
 describe('UpcomingClasses', () => {
   it('renders all classes', () => {
-    render(<UpcomingClasses classes={mockClasses} />);
+    const mockOnConfirm = jest.fn();
+    render(<UpcomingClasses classes={mockClasses}  onConfirm={mockOnConfirm} />);
     
     expect(screen.getByText('Test Class 1')).toBeInTheDocument();
     expect(screen.getByText('Test Class 2')).toBeInTheDocument();
   });
 
   it('displays "Book now" for unbooked classes', () => {
-    render(<UpcomingClasses classes={mockClasses} />);
+    const mockOnConfirm = jest.fn();
+    render(<UpcomingClasses classes={mockClasses} onConfirm={mockOnConfirm} />);
     
     expect(screen.getByText('Book now')).toBeInTheDocument();
   });
 
   it('displays "Join" for live booked classes', () => {
-    render(<UpcomingClasses classes={mockClasses} />);
+    const mockOnConfirm = jest.fn();
+    render(<UpcomingClasses classes={mockClasses} onConfirm={mockOnConfirm} />);
     
     expect(screen.getByText('Join')).toBeInTheDocument();
   });
 
   it('renders correct number of rows', () => {
-    render(<UpcomingClasses classes={mockClasses} />);
+    const mockOnConfirm = jest.fn();
+    render(<UpcomingClasses classes={mockClasses} onConfirm={mockOnConfirm} />);
     
     const rows = screen.getAllByRole('row');
     // +1 for the header row

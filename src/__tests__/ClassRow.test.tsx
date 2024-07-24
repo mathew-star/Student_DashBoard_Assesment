@@ -22,7 +22,7 @@ const mockOnConfirm = jest.fn();
 
 describe('ClassRow', () => {
   it('renders class information correctly', () => {
-    render(<ClassRow classInfo={mockClassInfo} index={0} onConfirm={mockOnConfirm} />);
+    render(<ClassRow classInfo={mockClassInfo} index={0} bookconfirm={mockOnConfirm} />);
     
     expect(screen.getByText('Test Class')).toBeInTheDocument();
     expect(screen.getByText('Test Staff')).toBeInTheDocument();
@@ -30,7 +30,7 @@ describe('ClassRow', () => {
   });
 
   it('opens dialog when "Book now" is clicked', () => {
-    render(<ClassRow classInfo={mockClassInfo} index={0} onConfirm={mockOnConfirm} />);
+    render(<ClassRow classInfo={mockClassInfo} index={0} bookconfirm={mockOnConfirm} />);
     
     fireEvent.click(screen.getByText('Book now'));
     
@@ -38,7 +38,7 @@ describe('ClassRow', () => {
   });
 
   it('calls onConfirm when booking is confirmed', () => {
-    render(<ClassRow classInfo={mockClassInfo} index={0} onConfirm={mockOnConfirm} />);
+    render(<ClassRow classInfo={mockClassInfo} index={0} bookconfirm={mockOnConfirm} />);
     
     fireEvent.click(screen.getByText('Book now'));
     fireEvent.click(screen.getByText('Confirm'));
@@ -48,7 +48,7 @@ describe('ClassRow', () => {
 
   it('displays "Join" button for live booked classes', () => {
     const liveClass = { ...mockClassInfo, isLive: true, booked: true };
-    render(<ClassRow classInfo={liveClass} index={0} onConfirm={mockOnConfirm} />);
+    render(<ClassRow classInfo={liveClass} index={0} bookconfirm={mockOnConfirm} />);
     
     expect(screen.getByText('Join')).toBeInTheDocument();
   });

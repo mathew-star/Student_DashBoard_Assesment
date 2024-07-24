@@ -16,7 +16,7 @@ const classes: UpcomingClass[] = [
   {
     id: 2,
     name: "Graphic Designing",
-    date: "2024-08-2",
+    date: "2024-08-02",
     time: "18:00",
     isLive: false,
     staff: {
@@ -28,7 +28,7 @@ const classes: UpcomingClass[] = [
   {
     id: 3,
     name: "Front End Development",
-    date: "2024-08-3",
+    date: "2024-08-03",
     time: "16:00",
     isLive: false,
     staff: {

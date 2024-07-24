@@ -158,7 +158,6 @@ const ClassRow: React.FC<ClassRowProps> = ({ classInfo, index, onConfirm }) => {
         </div>
       </div> */}
 
-    
 
     <TableRow >
       <TableCell>

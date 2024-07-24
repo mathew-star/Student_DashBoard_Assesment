@@ -1,6 +1,6 @@
 # Student Dashboard
 
-This project is a React-based student dashboard that displays upcoming classes and allows students to book and manage their class schedules.
+This  is a assesment project which is building student dashboard that displays upcoming classes and allows students to book and manage their class schedules.
 
 ## Features
 

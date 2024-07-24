@@ -19,7 +19,7 @@ This  is a assesment project which is building student dashboard that displays u
 
 ### Installation
 
-1. Clone the repository: git clone https://github.com/your-username/student-dashboard.git
+1. Clone the repository: git clone https://github.com/mathew-star/Student_DashBoard_Assesment.git
 
 2. Navigate to the project directory:cd student-dashboard
 

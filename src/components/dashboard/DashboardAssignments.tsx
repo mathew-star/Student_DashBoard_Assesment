@@ -9,10 +9,10 @@ interface Assignment {
 
 // Array of assignments with their details
 const assignments: Assignment[] = [
-    { id: 1, name: 'Logo design for a Airline', deadline: '20/06/2024' },
+    { id: 1, name: 'Graphic Design', deadline: '20/06/2024' },
     { id: 2, name: 'UI/UX Design - Ecommerce Mobile app', deadline: '22/06/2024' },
-    { id: 3, name: 'User Persona and User Journey', deadline: '24/06/2024' },
-    { id: 4, name: 'Typefaces', deadline: '28/06/2024' },
+    { id: 3, name: 'Cybersecurity task', deadline: '24/06/2024' },
+    { id: 4, name: 'Design-Figma task', deadline: '28/06/2024' },
   ];
 
 const DashboardAssignments: React.FC = () => {

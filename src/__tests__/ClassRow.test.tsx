@@ -1,5 +1,5 @@
 
-//The testing is not compeleted there are some issues to research and resolve which will be done shortly.
+//Note: The testing is not compeleted there are some issues to research and resolve which will be done shortly.
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import ClassRow from '@/components/dashboard/ClassRow';

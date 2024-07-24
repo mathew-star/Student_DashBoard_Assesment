@@ -27,11 +27,13 @@ const UpcomingClasses: React.FC<UpcomingClassesProps> = ({ classes: initialClass
 
 
       <Table>
-        <TableHeader>
+        <TableHeader className="hidden md:table-header-group">
           <TableRow>
-            <TableHead>Class name</TableHead>
-            <TableHead>Staff name</TableHead>
-            <TableHead>Actions</TableHead>
+
+              <TableHead>Class name</TableHead>
+              <TableHead>Staff name</TableHead>
+              <TableHead>Actions</TableHead>
+
           </TableRow>
         </TableHeader>
         <TableBody>

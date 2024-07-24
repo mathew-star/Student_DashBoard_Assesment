@@ -6,11 +6,13 @@ import DashboardPagination from './DashboardPagination'
 
 
 const DashBoard: React.FC = () => {
+  // State variables to manage pagination
   const [currentPage, setCurrentPage] = useState(1);
   const totalItems = 150;
   const itemsPerPage = 10;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
+  // Function to handle page changes
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     // Fetch data....
@@ -32,7 +34,7 @@ const DashBoard: React.FC = () => {
         itemsPerPage={itemsPerPage} />
 
         <div>
-            
+            {/* Additional elements can be added here if needed */}
         </div>
 
     </div>

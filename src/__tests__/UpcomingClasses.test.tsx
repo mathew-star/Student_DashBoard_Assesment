@@ -1,3 +1,5 @@
+
+//The testing is not compeleted there are some issues to research and resolve which will be done shortly.
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import UpcomingClasses from '@/components/dashboard/UpcomingClasses';

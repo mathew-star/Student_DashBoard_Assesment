@@ -12,6 +12,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 
 const Sidebar: React.FC = () => {
+  // Array of menu items with names and corresponding icons
   const menuItems = [
     { name: 'Dashboard',icon:<MdDashboard /> , active: true },
     { name: 'All classes', icon:<PiUsersBold /> },

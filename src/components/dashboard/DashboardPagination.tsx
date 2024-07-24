@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Define the props interface for the DashboardPagination component
 interface PaginationProps {
     currentPage: number;
     totalPages: number;
@@ -16,7 +17,7 @@ const DashboardPagination: React.FC<PaginationProps> = ({
     totalItems,
     itemsPerPage
   }) => {
-
+  // Function to calculate and return an array of page numbers based on current page and total pages
     const getPageNumbers = () => {
         const pageNumbers = [];
         const maxVisiblePages = 5;
@@ -43,7 +44,7 @@ const DashboardPagination: React.FC<PaginationProps> = ({
     
         return pageNumbers;
       };
-    
+      // Calculate the starting and ending item numbers for the current page
       const startItem = (currentPage - 1) * itemsPerPage + 1;
       const endItem = Math.min(currentPage * itemsPerPage, totalItems);
 

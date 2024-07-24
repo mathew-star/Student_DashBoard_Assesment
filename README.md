@@ -34,6 +34,7 @@ The application will be available at `http://localhost:3000`.
 ## Technologies Used
 
 - React
+- Next JS
 - TypeScript
 - Jest for testing
 - React Testing Library
@@ -46,7 +47,7 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-- [React documentation](https://reactjs.org/docs/getting-started.html)
+- [Next js documentation](https://nextjs.org/)
 - [TypeScript documentation](https://www.typescriptlang.org/docs/)
 - [Jest documentation](https://jestjs.io/docs/getting-started)
 - [React Testing Library documentation](https://testing-library.com/docs/react-testing-library/intro/)

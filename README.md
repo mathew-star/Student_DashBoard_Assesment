@@ -41,6 +41,8 @@ The application will be available at `http://localhost:3000`.
 - Tailwind CSS for styling
 
 
+Live Link : https://student-dash-board-assesment-e4unq9r0x.vercel.app/ 
+
 ## License
 
 This project is licensed under the MIT License.
